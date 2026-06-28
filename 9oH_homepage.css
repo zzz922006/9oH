@@ -307,6 +307,45 @@ body {
     border: 4px solid #FFFDF0;
     box-shadow: 0 4px 10px rgba(212, 155, 37, 0.3);
 }
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--light-yellow);
+    padding: 25px 5%;
+    border-top: 1px solid #E5C05C;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-brand {
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+.footer-right {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.footer-right a:hover { color: var(--gold); }
+
 
 
 /* --- TỐI ƯU CẤU HÌNH CHO MÀN HÌNH ĐIỆN THOẠI (Dưới 768px) --- */
