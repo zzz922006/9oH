@@ -1,13 +1,19 @@
 body {
     background: url('./img/login_logout.jpg');
     background-size: cover;
-    background-position-y: -60px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 #wrapper {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 #form-login{
     max-width: 400px;

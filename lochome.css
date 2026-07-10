@@ -30,13 +30,13 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /*Cap do hien thi*/
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 12px;  /*khoang cach tp con*/
     cursor: pointer;
 }
 
@@ -44,7 +44,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover; /*xu li anh*/
     border: 2px solid var(--gold);
 }
 
@@ -59,9 +59,10 @@ body {
     margin-left: auto;
     margin-right: 35px;
 }
+
 .nav-links ul {
     display: flex;
-    list-style-type: none;
+    list-style-type: none; /*xoa dinh dang ds*/
     gap: 35px;
 }
 .nav-links a {
@@ -71,6 +72,7 @@ body {
     font-weight: 600;
     transition: color 0.3s ease;
 }
+
 .nav-links a:hover { color: var(--gold); }
 
 
@@ -108,6 +110,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .login-btn:hover {
     background-color: var(--dark-gold);
     transform: translateY(-2px);
@@ -123,6 +126,10 @@ body {
     color: var(--gray);
     cursor: pointer;
     margin-left: 15px;
+}
+
+.mobile-login {
+    display: none;
 }
 
 .action-btn { display: flex; align-items: center; }
@@ -145,11 +152,11 @@ body {
 
 .slogan-title {
     font-size: 80px;
-    font-weight: 1000;
+    font-weight: 1000; /* do day chu*/
     color: var(--dark-gray);
     margin-bottom: 20px;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
+    line-height: 1.3; /* khoang cach dong*/
+    letter-spacing: 0.5px; /* khoang cach chu*/
     font-family: serif;
 }
 .slogan-sub {
@@ -189,8 +196,8 @@ body {
 .about-img {
     width: 100%;
     max-width: 480px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    aspect-ratio: 1/1; /* ti le khung anh */
+    object-fit: cover; /* ti le anh*/
     border-radius: 24px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
@@ -239,7 +246,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    flex-shrink: 0; /* co dinh anh */
 }
 .feature-text {
     font-size: 16px;
@@ -380,6 +387,28 @@ body {
         padding: 20px 0;
         margin: 0;
         z-index: 999;
+    }
+    .mobile-login {
+        display: block; /* Hiện nút trên điện thoại */
+        margin-top: 20px; /* Tạo khoảng cách với mục Liên hệ ở trên */
+        padding: 0 20px;
+    }
+
+    .mobile-login a {
+        display: block;
+        text-align: center;
+        background-color: #D49B25; /* Màu vàng thương hiệu 9oH */
+        color: #fff !important; /* Chữ màu trắng */
+        padding: 12px 0;
+        border-radius: 25px; /* Bo tròn góc nút bấm */
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s ease;
+    }
+
+    .mobile-login a:hover {
+        background-color: #B5841D; /* Màu vàng đậm hơn khi chạm/hover */
     }
 
     .nav-links.active {
